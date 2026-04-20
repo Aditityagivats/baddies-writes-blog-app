@@ -9,8 +9,7 @@ A backend-focused blog application built using Node.js, Express, and EJS that al
 * Create new blog posts
 * View all posts
 * View individual post details
-* Edit and delete posts *(if implemented)*
-* Server-side rendering using EJS
+* Edit and delete posts 
 
 ---
 
