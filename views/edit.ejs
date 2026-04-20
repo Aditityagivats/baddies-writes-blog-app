@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Blog</title>
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+    <h1> Edit your Blog</h1>
+    <h3> User id: <%= blog.id %></h3>
+    <h4> UserName: @<%= blog.username %></h4>
+     
+    <form method="post" action="/blogs/<%= blog.id %>?_method=PATCH">
+        <textarea rows="10" cols="30" name="post"><%= blog.post %> </textarea>
+
+        <button type="submit">Update </button>
+    </form>
+</body>
+</html>

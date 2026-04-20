@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gen Z Writes : Blog App</title>
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+    <h1> Gen Z Writes</h1>
+     <% for( blog of blogs) {%>
+    <div class="blogs"> 
+       
+            <h3> @<%= blog.username %></h3>
+            <h4> <%= blog.post %></h4>
+            <a href="/blogs/<%= blog.id %>"> <button>See Blog </button> </a>            
+            <a href="/blogs/<%= blog.id %>/edit"> <button>Edit Blog</button> </a>
+
+            <form method="post" action="/blogs/<%= blog.id %>?_method=DELETE">
+                <a href="/blogs/<%= blog.id %>/"> <button>Delete Blog</button> </a>
+            </form>
+          
+         
+    </div>
+      <% } %> <br> <br>
+      <a href="/blogs/new"> <button>Create Blog</button>
+    </a>
+
+    
+
+</body>
+</html>
