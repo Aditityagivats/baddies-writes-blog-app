@@ -29,14 +29,14 @@ let blogs=[
      {
         id:uuidv4(),
         username:"Chirag Baliyan",
-        post:"Learning Backend is really important to understand the whole enviroment of the project."
+        post:"She is a Bitch"
 
     },
 
      {
         id:uuidv4(),
         username:"Harshit Swarrop",
-        post:"Learning Backend is really important to understand the whole enviroment of the project."
+        post:"Everything I want wants me more"
 
     },
 ];
